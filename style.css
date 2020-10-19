@@ -1,0 +1,171 @@
+body, html {
+  height: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #3d5069;
+}
+.parallax {
+  background-image: url(background.png);
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-header {
+  height: 100vh;
+  background-image: url(background.png);
+  object-fit: cover;    
+}
+.header-text-container {
+  height: 100%;
+}
+#hello-world, #name, #subtitle {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#hello-world {
+  font-size: 5.5em;
+}
+#name {
+  font-size: 4.5em;
+}
+.title {
+  font-size: 3em;
+  margin-bottom: 8%;
+}
+.about-body {
+  font-size: 1.25em;
+  padding: 5% 15%;
+  height: 100vh;
+}
+.projects-body {
+  font-size: 1.25em;
+  padding: 10% 15% 5%;
+}
+/* Image positions for project covers */
+#skijumpingworld {
+  object-fit: cover;
+  object-position: 0% 50%;
+}
+#polishcities {
+  object-fit: cover;
+  object-position: 0% 0;
+}
+#triviaquiz {
+  object-fit: cover;
+  object-position: 0% 30%;
+}
+#bookstore {
+  object-fit: cover;
+  object-position: 0% 7%;
+}
+.img-container {
+  position: relative;
+  width: auto;
+  height: 250px;
+  margin-top: 5%;
+}
+/* Project images to display in squares and in equal columns and rows */
+.project-image {
+  display: block;
+  height: 250px;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #292b2c;
+  border-radius: .8%;
+}
+.img-container:hover .overlay {
+  opacity: 0.9;
+}
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.contact-body {
+  font-size: 17px;
+  margin-top: 5%;
+  padding: 10% 15% 5%;
+  padding-bottom: 5%;
+  height: 80vh;
+}
+#contact-title {
+  margin-bottom: 5%;
+}
+footer {
+  font-size: 	0.875em;
+  color: lightgray;
+}
+.btn {
+  margin: 10%;
+}
+a:link {
+  color: whitesmoke;
+}
+a:visited {
+  color: whitesmoke;
+}
+a:hover {
+  color: #8ccfff;
+}
+a:active {
+  color: #151019;
+}
+.btn:link {
+  color: #3d5069;
+  background-color: whitesmoke;
+}
+.btn:visited {
+  color: #3d5069;
+  background-color: whitesmoke;
+}
+.btn:hover {
+  color: #8ed2ff;
+  background-color: #151019;
+  border-color: whitesmoke;
+}
+.btn:active {
+  color: #8ed2ff;
+  background-color: #151019;
+  border-color: whitesmoke;
+}
+@media screen and (max-width: 876px) {
+  .page-header {
+    height: 125vh;
+  }
+  .parallax {
+    display: none;
+  }
+  .about-body {
+    margin-bottom: 15%;
+  }
+  #polishcities {
+    object-fit: cover;
+    object-position: 50% 0;
+  }
+  .about-body {
+    height: auto;
+  }
+  .contact-body {
+    height: auto;
+  }
+}

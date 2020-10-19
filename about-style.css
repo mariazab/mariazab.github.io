@@ -1,0 +1,55 @@
+.photo {
+    width: 200px;
+    margin: 0% 1% 0% 0%;
+    float: left;
+}
+#about-subpage-title {
+    margin: 4% 0%;
+}
+.about-paragraph {
+    text-align: justify;
+    font-size: 1.10em;
+    margin: 2% 15% 2%;
+}
+#freetime {
+    padding: 0;
+    margin: 2% 0%;
+}
+.skills-div, .contact-div, .certificates-div {
+    padding: 0;
+}
+#knitting {
+    object-fit: cover;
+    object-position: 0% 85%;
+}
+#skijumping {
+    object-fit: cover;
+    object-position: 0% 60%;
+}
+#photography {
+    object-fit: cover;
+    object-position: 0% 50%;
+}
+@media screen and (max-width: 876px) {
+    .about-paragraph {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .container-photo {
+        width: 100%;
+    }
+    .photo {
+        float: none;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    #knitting {
+        object-position: 0% 90%;
+    } 
+    #skijumping {
+        object-position: 0% 57%;
+    }
+    #photography {
+        object-position: 0% 55%;
+    }
+  }
